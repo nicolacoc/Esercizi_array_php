@@ -1,0 +1,39 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+.container{
+    background-color: gray;
+    max-width: 1080px;
+    margin: auto;
+    height: 90vh;
+
+}
+
+
+.white{
+    color: white;
+}
+
+.green{
+    color: green;
+}
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
+.black{
+    color: black;
+}

@@ -1,0 +1,30 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+.container{
+    padding-top: 6em;
+    background-color: darkgoldenrod;
+    color: black;
+    max-width: 1080px;
+    margin: auto;
+    height: 90vh;
+
+}
+
+.frasi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
