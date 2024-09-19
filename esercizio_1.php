@@ -5,13 +5,13 @@ $modify= $frase;
 $inRiga = null;
 $inColonna = null;
 foreach ($colors as $color ) {
-    $modify = str_replace($color , "<span class='{$color}'>&nbsp;{$color}&nbsp;</span>", $modify);
+    $modify = str_replace($color , "<span class={$color}>&nbsp;{$color}&nbsp;</span>", $modify);
 }
 foreach ($colors as $color ) {
-    $inRiga .= "<span class='{$color}'>{$color}</span>" . ", ";
+    $inRiga .= "<span class={$color}>{$color}</span>" . ", ";
 }
 foreach ($colors as $color ) {
-    $inColonna .= "<span class='{$color}'>{$color}</span>". "<br>";
+    $inColonna .= "<span class={$color}>{$color}</span>". "<br>";
 }
 
 
@@ -26,13 +26,13 @@ foreach ($colors as $color ) {
 <body>
 <div class="container">
     <div class="frase_1">
-<?php echo $modify ?>
+<?php echo $modify?>
     </div>
     <div class="frase_2">
-        <?php echo $inRiga ?>
+        <?php echo $inRiga?>
     </div>
     <div class="frase_3">
-        <?php echo $inColonna ?>
+        <?php echo $inColonna?>
     </div>
 </div>
 </body>
